@@ -1,0 +1,94 @@
+body {
+	font-family: 'Raleway', sans-serif;
+}
+h2 {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 200;
+	letter-spacing: 0.2em;
+	font-size: 2.2em;
+}
+.container {
+	padding: 50px;
+}
+.hello {
+	background-color: #000000;
+}
+.hello-button{
+	margin-top: 6em;
+}
+.hello-button .btn-custom {
+	border-radius: 0;
+	background-color: #fff;
+	border: none;
+	color: #000000;
+	letter-spacing: 0.1em;
+}
+.hello-button .btn-custom:hover, .hello-button .btn-custom:focus, .hello-button .btn-custom:active:focus {
+	background-color: #ff0000;
+	color: #fff;
+}
+.icons {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-content: space-around;
+}
+.icons div {
+	height: 7.4em;
+	width: 7.4em;
+	border-radius: 50%;
+	background-color: #fff;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.icons div:nth-child(2), .play-button button:nth-child(2) {
+	margin-right: 2em;
+	margin-left: 2em;
+}
+.icons div img{
+	width: 100%;
+	height: auto;
+}
+.play-button .btn-custom2 {
+	height: 7.4em;
+	width: 7.4em;
+	border-radius: 50%;
+	background-color: #ff0000;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	color: #fff;
+	text-transform: uppercase;
+}
+.play-button .btn-custom2:hover {
+	background-color: #000000;
+} 
+.play-button .btn-custom2:focus, .play-button .btn-custom2:active:focus {
+	outline: none;
+	outline-offset: none;
+}
+.results .badge-custom {
+	background-color: #000000;
+	height: 2em;
+	width: 2em;
+	border-radius: 50%;
+	line-height: 1.5em;
+	font-size: 1.2em; 
+}
+.results #js-playerName, .results #js-playerPick, .results #js-computerPick, .results #js-playerResult, .results #js-computerResult{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#js-resultsTableElement .col-xs-2.text-center p {
+	color:  #ff0000;
+	font-weight: bold;
+	font-size: 1.5em;
+	letter-spacing: 0.1em;
+}
+.col-xs-5 {
+	padding-bottom: 1em;
+	padding-top: 0.5em;
+	background-color: #e0e0e0;
+}

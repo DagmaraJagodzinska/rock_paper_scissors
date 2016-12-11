@@ -1,0 +1,100 @@
+<!-- plik index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>GAME</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <section class="hello">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+              <h2 class="text-center">Kamień papier nożyce</h2>
+            </div>
+        </div>  
+        <div class="row">  
+          <div class="col-lg-12">
+            <div class="icons">
+              <div>
+                <img src="images/rock.png">
+              </div>
+              <div>
+                <img src="images/paper.png"">
+              </div>            
+              <div>
+                <img src="images/sissors.png"">
+              </div>
+            </div>
+          </div>  
+        </div>
+        <div id="js-newGameElement" class="hello-button">
+          <div class="row text-center">
+            <div class="col-lg-12">
+              <button  id="js-startGameButton" class="btn btn-default btn-custom">Nowa Gra</button>
+            </div>
+           </div> 
+        </div>
+      </div>
+    </section>  
+    <section class="play">
+      <div class="container">
+        <div class="row">  
+          <div class="col-lg-12">
+              <div id="js-playerPickElement" class="play-button text-center">
+                  <button id="js-playerPick_rock" class="btn btn-custom2">Kamień</button>
+                  <button id="js-playerPick_paper" class="btn btn-custom2">Papier</button>
+                  <button id="js-playerPick_scissors" class="btn btn-custom2">Nożyce</button>
+              </div>
+            </div>    
+        </div>
+      </div>
+    </section>
+    <section class="results">
+      <div id="js-resultsTableElement" class="container">
+        <div class="row">
+          <div class="col-xs-5 text-center">
+            <span id="js-playerPoints" class="badge badge-custom">0</span>
+            <span id="js-playerName">Imię gracza</span>
+          </div>
+          <div class="col-xs-2 text-center"><p>VS.<p></div>
+          <div class="col-xs-5 text-center">
+            <span id="js-computerPoints" class="badge badge-custom">0</span>
+            KOMPUTER
+          </div>
+        </div>
+          <div class="row">
+            <div class="col-xs-5 text-center">
+              <span id="js-playerPick">
+                Wybór gracza
+              </span>
+            </div>
+            <div class="col-xs-2"></div>
+            <div class="col-xs-5 text-center">
+              <span id="js-computerPick">
+                Wybór komputera
+              </span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-5 text-center">
+              <span id="js-playerResult">
+                Wynik gracza
+              </span>
+            </div>
+            <div class="col-xs-2"></div>
+            <div class="col-xs-5 text-center">
+              <span id="js-computerResult">
+                Wynik komputera
+              </span>
+            </div>
+          </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </body>
+</html>
