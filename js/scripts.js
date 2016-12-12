@@ -84,10 +84,14 @@ function playerPick(playerPick) {
     
     playerPickElem.innerHTML = playerPick;
     computerPickElem.innerHTML = computerPick;
-    
+    checkAllWinner();
     checkRoundWinner(playerPick, computerPick);
 }
 // logika i punkty 
+function setGamePoints() {
+    playerPointsElem.innerHTML = player.score;
+    computerPointsElem.innerHTML = computer.score;
+}
 
 function checkRoundWinner(playerPick, computerPick) {
   playerResultElem.innerHTML = computerResultElem.innerHTML = '';
@@ -111,13 +115,8 @@ function checkRoundWinner(playerPick, computerPick) {
         computerResultElem.innerHTML = "Wygrał komputer";
         computer.score++;
     }
+    setGamePoints()
 }
-
-function setGamePoints() {
-    playerPointsElem.innerHTML = player.score;
-    computerPointsElem.innerHTML = computer.score;
-}
-setGamePoints()
 
 function over() {
     if(player.score === 10 || computer.score === 10) {
@@ -125,3 +124,15 @@ function over() {
     } 
 } 
 setGameElements ();
+    function checkAllWinner() {
+        if (player.score === 10) {
+            alert('Koniec, wygrywa:' + player.name);
+            gameState = 'ended';
+            setGameElements();
+        }
+        if (computer.score == 10) {
+            alert('Koniec, wygrywa komp!');
+            gameState = 'ended';
+            setGameElements();
+        }
+    }
