@@ -70,7 +70,8 @@ function newGame() {
 // wybor gracza
 
 function getComputerPick() {
-    var possiblePicks = ['rock','paper','sissors'];
+    var x = Math.random();
+    var possiblePicks = ['rock', 'paper', 'scissors'];
     return possiblePicks[Math.floor(Math.random()*3)];
 }
 
@@ -118,15 +119,10 @@ function checkRoundWinner(playerPick, computerPick) {
     setGamePoints()
 }
 
-function over() {
-    if(player.score === 10 || computer.score === 10) {
-        gameState = 'ended';
-    } 
-} 
 setGameElements ();
     function checkAllWinner() {
         if (player.score === 10) {
-            alert('Koniec, wygrywa:' + player.name);
+            alert('Koniec, wygrywa: ' + player.name);
             gameState = 'ended';
             setGameElements();
         }
